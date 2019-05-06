@@ -5,14 +5,17 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="libenum",
-    version="1.0.0",
+    version="1.0.1",
     author="Xue Jiao",
     author_email="jiao.xuejiao@gmail.com",
+    license='MIT',
     description="A small enum package",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/caser789/libenum",
-    packages=setuptools.find_packages(),
+    zip_safe=False,
+    platforms='any',
+    packages=['libenum'],
     classifiers=[
         "Programming Language :: Python :: 2",
         "License :: OSI Approved :: MIT License",
